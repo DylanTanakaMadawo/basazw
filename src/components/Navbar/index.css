@@ -1,0 +1,58 @@
+.outer-container {
+  /* background-color: grey; */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #f6f6f6ee;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 100px;
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.208);
+  /* background-color: pink; */
+}
+
+.logo-container {
+  /* background-color: yellow; */
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-family: "Vina Sans", cursive;
+  font-size: 30px;
+  margin-top: 130px;
+}
+
+.logo-container:hover {
+  cursor: pointer;
+}
+
+.right-side-nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+.add-job {
+  cursor: pointer;
+}
+
+.add-job:hover {
+  color: rgb(48, 48, 48);
+}
+
+.addjob-link:hover {
+  color: rgb(48, 48, 48) !important;
+}

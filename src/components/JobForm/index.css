@@ -1,0 +1,112 @@
+.form-pager {
+  height: 100vh;
+  width: 100%;
+}
+
+.form-container {
+  width: 500px;
+  /* background-color: pink; */
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(183, 183, 183, 0.693);
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+.input-grp {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  outline: none;
+}
+
+.location-input,
+.contact-input {
+  padding: 14px;
+  border: none;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.678);
+  outline: none;
+}
+
+.desc-textarea {
+  background-color: #f6f6f6;
+  border: 1px solid rgba(120, 120, 120, 0.678);
+}
+
+.location-div,
+.contact-div,
+.description-div {
+  margin-bottom: 20px;
+}
+
+.locations-div {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.city,
+.town {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.581);
+  border-radius: 2px;
+  height: 40px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  transition: 0.4s;
+  margin-left: 200px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(2, 2, 2);
+  border: 1px solid rgba(255, 255, 255, 0.581);
+  color: white;
+}
+
+.home-link-container {
+  width: 100px;
+  position: relative;
+  top: 50px;
+  left: 170px;
+  /* background-color: pink; */
+}
+
+.add-photo {
+  display: flex;
+  margin-bottom: 30px;
+}
+.photo-icon {
+  position: relative;
+  top: 13px;
+  margin-right: 13px;
+}
+.file-upload-input {
+  position: relative;
+  top: 18px;
+  left: 30px;
+  /* background-color: red; */
+  height: 22px;
+  width: 200px;
+}
