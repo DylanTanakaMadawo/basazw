@@ -56,3 +56,14 @@
 .addjob-link:hover {
   color: rgb(48, 48, 48) !important;
 }
+
+@media (max-width: 720px) {
+  .actions {
+    display: none;
+  }
+  .add-job {
+    position: relative;
+    top: 0px;
+    left: 80px;
+  }
+}

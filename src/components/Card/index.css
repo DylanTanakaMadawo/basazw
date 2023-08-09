@@ -64,3 +64,14 @@
 .contact {
   display: flex;
 }
+
+@media (max-width: 720px) {
+  .card-container {
+    width: 70%;
+  }
+  .card-btn-container {
+    height: 40px;
+    width: 100px;
+    display: none;
+  }
+}
