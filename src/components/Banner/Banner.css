@@ -1,0 +1,68 @@
+.banner-container {
+  width: 100%;
+  height: 70vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  background-image: url(../../../public/images/banner-grass.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.6; */
+}
+
+.banner-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  /* padding: 30px 80px; */
+  width: 50%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+.banner-form-container form {
+  /* height: 70px; */
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.banner-form-container input {
+  border: none;
+  padding: 10px;
+  height: 30px;
+  width: 300px;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.banner-form-container button {
+  /* padding: 12px; */
+  height: 50px;
+  border: none;
+  width: 150px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+@media (max-width: 720px) {
+  .banner-form-container {
+    width: 90%;
+    height: 90%;
+  }
+  .banner-form-container input {
+    height: 30px;
+    width: 200px;
+  }
+}

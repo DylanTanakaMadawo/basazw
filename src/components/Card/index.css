@@ -65,9 +65,14 @@
   display: flex;
 }
 
+.status p {
+  color: rgb(86, 86, 86);
+}
+
 @media (max-width: 720px) {
   .card-container {
     width: 70%;
+    height: 80vh;
   }
   .card-btn-container {
     height: 40px;

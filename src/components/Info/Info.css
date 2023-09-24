@@ -1,0 +1,44 @@
+.info-container {
+  height: 80vh;
+  width: 100%;
+  /* background-color: grey; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+
+.info-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  /* background-color: pink; */
+}
+
+.info-right {
+  width: 45%;
+}
+
+.info-right img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+@media (max-width: 720px) {
+  .info-container {
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+  }
+  .info-left {
+    width: 85%;
+    /* background-color: pink; */
+  }
+
+  .info-right {
+    width: 85%;
+  }
+}
