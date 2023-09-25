@@ -4,6 +4,7 @@ import { Cards } from "../Cards";
 import { Banner } from "../Banner/Banner";
 import { Info } from "../Info/Info";
 import { Divider } from "@mui/material";
+import { Featured } from "../Featured/Featured";
 
 export const Homepage = () => {
   return (
@@ -14,6 +15,8 @@ export const Homepage = () => {
       <Cards />
       <Divider sx={{ margin: "0 10%" }} />
       <Info />
+      <Divider sx={{ margin: "0 10%" }} />
+      <Featured />
     </div>
   );
 };

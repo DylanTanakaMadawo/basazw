@@ -31,7 +31,7 @@ export const Card = (props) => {
         </div>
       </div>
       <div className="card-btn-container">
-        <button className="card-btn">Take Job</button>
+        {/* <button className="card-btn">Take Job</button> */}
       </div>
     </div>
   );

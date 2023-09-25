@@ -6,9 +6,12 @@ import { DATA } from "../../Data";
 export const Cards = () => {
   return (
     <div>
-      {DATA.map((product) => (
-        <Card data={product} />
-      ))}
+      <h1 style={{ marginLeft: "20px" }}>Available Tasks</h1>
+      <div>
+        {DATA.map((product) => (
+          <Card data={product} />
+        ))}
+      </div>
     </div>
   );
 };
