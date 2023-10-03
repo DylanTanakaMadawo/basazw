@@ -36,7 +36,7 @@
 @media (max-width: 850px) {
   .featured-card-container {
     width: 70%;
-    height: 50vh;
+    height: 53vh;
     margin-bottom: 100px;
   }
   .featured-card-img-container {
@@ -50,7 +50,7 @@
 @media (max-width: 720px) {
   .featured-card-container {
     width: 70%;
-    height: 75vh;
+    height: 80vh;
     margin-bottom: 100px;
   }
 }
@@ -58,7 +58,7 @@
 @media (max-width: 500px) {
   .featured-card-container {
     width: 70%;
-    height: 60vh;
+    height: 63vh;
     margin-bottom: 100px;
   }
   .featured-card-img-container {
@@ -72,7 +72,7 @@
 @media (max-width: 400px) {
   .featured-card-container {
     width: 70%;
-    height: 70vh;
+    height: 73vh;
     margin-bottom: 100px;
   }
   .featured-card-img-container {

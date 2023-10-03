@@ -1,0 +1,42 @@
+.footer-container {
+  height: 50vh;
+  width: 100%;
+  background-color: #0d0511;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin-top: 200px;
+}
+
+.socials {
+  width: 20%;
+}
+
+.social-links {
+  width: 100%;
+  /* height: 200px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+.mui-icons {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .social-links {
+    flex-direction: column;
+    height: 55%;
+  }
+  .mui-icons {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .footer-container h1 {
+    font-size: 22px;
+  }
+}

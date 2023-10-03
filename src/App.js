@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./components/Footer/Footer";
 import { Homepage } from "./components/Homepage";
 import { JobForm } from "./components/JobForm";
 
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/addjob" element={<JobForm />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
