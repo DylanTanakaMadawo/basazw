@@ -29,7 +29,7 @@ export const Footer = () => {
           <p>Terms and services</p>
         </div>
         <div className="socials">
-          <h1>Follow Us</h1>
+          <h1>Follow</h1>
           <div className="social-links">
             <Instagram className="mui-icons" />
             <Facebook className="mui-icons" />
