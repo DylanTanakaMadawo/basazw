@@ -13,14 +13,30 @@ export const JobForm = () => {
   const [description, setDescription] = useState("");
   const [fee, setFee] = useState("");
   const [loading, setLoading] = useState(false);
+  const [postImage, setPostImage] = useState({ myFile: "" });
 
-  const handleSavePost = () => {
+  const handleFileUpload = async (e) => {
+    const file = e.target.files[0];
+    const base64 = await convertToBase64(file);
+    // console.log(base64);
+    // console.log(file);
+    setPostImage({ ...postImage, myFile: base64 });
+  };
+  const handleSavePost = (e) => {
+    e.preventDefault();
+    console.log("image and stuff uploaded?");
+
+    // const myImage = postImage.myFile;
+
     const data = {
       location,
       contact,
       description,
       fee,
+      // myImage: postImage.myFile,
+      myImage: postImage.myFile,
     };
+    console.log(data.myImage);
     setLoading(true);
     axios
       .post("http://localhost:5555/posts", data)
@@ -36,6 +52,20 @@ export const JobForm = () => {
   };
 
   const navigate = useNavigate();
+
+  function convertToBase64(file) {
+    return new Promise((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(file);
+      fileReader.onload = () => {
+        resolve(fileReader.result);
+      };
+      fileReader.onerror = (error) => {
+        reject(error);
+      };
+    });
+  }
+
   return (
     <div className="form-pager">
       <div className="home-link-container">
@@ -64,12 +94,12 @@ export const JobForm = () => {
                 />
               </div>
               <div className="town">
-                <span>Fee</span>
+                <span>Fee /hr</span>
                 <input
                   type="text"
                   value={fee}
                   onChange={(e) => setFee(e.target.value)}
-                  placeholder="Town"
+                  placeholder="Fee"
                   className="location-input"
                   maxLength="20"
                 />
@@ -102,10 +132,22 @@ export const JobForm = () => {
               <AddAPhoto />
             </div>
             <p>Add A Photo</p>
-            <input className="file-upload-input" type="file" />
+            <input
+              className="file-upload-input"
+              // value={postImage.myFile}
+              type="file"
+              name="myFile"
+              id="file-upload"
+              // accept=".jpeg .png .jpg .webp .avi"
+              onChange={(e) => handleFileUpload(e)}
+            />
           </div>
           <div className="submit-btn-container">
-            <button className="submit-btn" onClick={handleSavePost}>
+            <button
+              type="submit"
+              className="submit-btn"
+              onClick={handleSavePost}
+            >
               Submit
             </button>
           </div>

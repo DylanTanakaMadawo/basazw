@@ -10,7 +10,8 @@ router.post("/", async (req, res) => {
       !req.body.fee ||
       !req.body.contact ||
       !req.body.description ||
-      !req.body.fee
+      !req.body.fee ||
+      !req.body.myImage
     ) {
       return res.status(400).send({
         message:
@@ -23,6 +24,7 @@ router.post("/", async (req, res) => {
       contact: req.body.contact,
       description: req.body.description,
       fee: req.body.fee,
+      myImage: req.body.myImage,
     };
 
     const post = await Post.create(newPost);

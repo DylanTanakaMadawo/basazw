@@ -17,6 +17,12 @@ const postSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  myImage: {
+    type: String,
+  },
+  myFile: {
+    type: String,
+  },
 });
 
 export const Post = mongoose.model("Post", postSchema);

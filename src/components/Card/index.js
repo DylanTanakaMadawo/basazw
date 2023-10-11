@@ -4,7 +4,7 @@ import { LocationCity, Phone } from "@mui/icons-material";
 import "./index.css";
 
 export const Card = (props) => {
-  const { id, location, contact, image, description, fee } = props.data;
+  const { id, location, contact, myImage, description, fee } = props.data;
 
   return (
     <div className="card-container">
@@ -19,7 +19,7 @@ export const Card = (props) => {
         </div>
       </div>
       <div className="img-container">
-        <img src={image} alt="job-post" />
+        <img src={myImage} alt="job-post" />
       </div>
       <div className="card-info">
         <div className="description">
