@@ -9,7 +9,7 @@ export const Info = () => {
     <div className="info-container">
       <div className="info-right">
         <div className="info-image-container">
-          <img src="./images/3.jpg" alt="task" />
+          <img src="./images/handymen2.jpg" alt="task" />
         </div>
       </div>
       <div className="info-left">
@@ -20,7 +20,7 @@ export const Info = () => {
         </p>
         <p>
           <Check />
-          <b>Choose Tasker</b>
+          <b>Choose Helper</b>
         </p>
         <p>
           <Check />

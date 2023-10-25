@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -66,15 +66,19 @@ export const JobForm = () => {
     });
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="form-pager">
       <div className="home-link-container">
         <Link
-          to="/"
+          to="/browse"
           style={{ textDecoration: "none", color: "black", display: "flex" }}
         >
           <ArrowBack sx={{ marginTop: "27px", marginRight: "10px" }} />
-          <h2>Home</h2>
+          <h2>Browse Jobs</h2>
         </Link>
       </div>
       <div className="form-container">

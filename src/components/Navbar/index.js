@@ -3,7 +3,7 @@ import React from "react";
 import { Favorite, Phone, Home, Add } from "@mui/icons-material";
 
 import "./index.css";
-import { ListItemButton, List } from "@mui/material";
+import { List } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -15,15 +15,15 @@ export const Navbar = () => {
         </div>
         <div className="right-side-nav">
           <List className="actions">
-            <ListItemButton>
+            <Link style={{ textDecoration: "none", color: "black" }} to="/">
               <Home sx={{ color: "#343434", fontSize: "30px" }} />
-            </ListItemButton>
-            <ListItemButton>
+            </Link>
+            <Link style={{ textDecoration: "none", color: "black" }} to="/">
               <Favorite sx={{ color: "#343434", fontSize: "30px" }} />
-            </ListItemButton>
-            <ListItemButton>
+            </Link>
+            <Link style={{ textDecoration: "none", color: "black" }} to="/">
               <Phone sx={{ color: "#343434", fontSize: "30px" }} />
-            </ListItemButton>
+            </Link>
           </List>
 
           <div className="add-job">
@@ -36,7 +36,7 @@ export const Navbar = () => {
               }}
               className="addjob-link"
             >
-              <h3>Add Job</h3>
+              <h3>Post Job</h3>
               <Add sx={{ marginTop: "19px", marginLeft: "5px" }} />
             </Link>
           </div>

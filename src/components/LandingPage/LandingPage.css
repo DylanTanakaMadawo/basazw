@@ -1,0 +1,161 @@
+.landing-page-container {
+  /* background-color: pink; */
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 100px;
+}
+
+.landing-desc-container {
+  /* background-color: pink; */
+  /* background-image: url(../../../public/images/handymen.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../../../public/images/handymen.jpg);
+  background-position: center top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.6; */
+  margin-bottom: 100px;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-desc {
+  width: 80%;
+  margin: auto;
+  /* background-color: black; */
+  color: white;
+  /* margin-bottom: 160px; */
+}
+.landing-desc p {
+  font-size: 20px;
+}
+
+.landing-cards {
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.landing-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20px;
+  /* background-color: pink; */
+  width: 40%;
+  height: 90%;
+}
+
+.landing-card-image {
+  /* background-color: pink; */
+  width: 40%;
+}
+.landing-card-image img {
+  width: 100%;
+}
+
+.landing-all-card {
+  background-color: rgba(128, 128, 128, 0.087);
+  border-radius: 10px;
+  height: 300px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.landing-main-btns {
+  margin-top: 50px;
+  width: 90%;
+  margin: auto;
+  /* background-color: grey; */
+}
+.to-for-btn p {
+  font-size: 20px;
+}
+.for-to-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #0d0511;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.286);
+}
+.for-to-link:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.412);
+  transition: 0.3s ease-in-out;
+}
+
+.for-help-btn {
+  /* background-color: grey; */
+  height: 350px;
+  width: 45%;
+}
+
+.to-for-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+  width: 90%;
+  margin: auto;
+}
+
+.landing-how-to {
+  /* background-color: grey; */
+  width: 90%;
+  margin: auto;
+}
+.landing-how-to h2 {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.landing-steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.landing-step {
+  border: 1px solid rgba(0, 0, 0, 0.311);
+  border-radius: 5px;
+  width: 18%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.landing-step p,
+h3 {
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .landing-cards {
+    flex-direction: column;
+  }
+  .landing-all-card {
+    width: 70%;
+    flex-direction: column;
+    height: 80vh;
+  }
+  .landing-card-image {
+    margin-top: 30px;
+  }
+  .landing-card-text {
+    width: 70%;
+    text-align: center;
+  }
+}
