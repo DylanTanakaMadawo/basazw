@@ -2,7 +2,8 @@ import React from "react";
 
 import "./NewCard.css";
 import { Divider } from "@mui/material";
-import { LocationOn } from "@mui/icons-material";
+import { Delete, Favorite, LocationOn } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export const NewCard = (props) => {
   const { id, location, contact, myImage, description, fee } = props.data;
@@ -34,6 +35,14 @@ export const NewCard = (props) => {
           >
             ${fee}/hr
           </p>
+          <div className="newcard-actions">
+            <Link style={{ textDecoration: "none", color: "black" }}>
+              <Delete sx={{ color: "#343434" }} />
+            </Link>
+            <Link style={{ textDecoration: "none", color: "black" }}>
+              <Favorite sx={{ color: "#343434" }} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

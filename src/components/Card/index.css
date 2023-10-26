@@ -76,7 +76,7 @@
 
 @media (max-width: 850px) {
   .card-container {
-    width: 80%;
+    width: 90%;
     height: 60vh;
   }
   .card-btn-container {
@@ -91,7 +91,7 @@
 
 @media (max-width: 720px) {
   .card-container {
-    width: 80%;
+    width: 90%;
     height: 75vh;
   }
   .card-btn-container {

@@ -149,7 +149,7 @@ h3 {
   .landing-all-card {
     width: 70%;
     flex-direction: column;
-    height: 80vh;
+    height: 70vh;
   }
   .landing-card-image {
     margin-top: 30px;
@@ -157,5 +157,29 @@ h3 {
   .landing-card-text {
     width: 70%;
     text-align: center;
+  }
+  .landing-desc p {
+    font-size: 13px;
+    font-weight: 100;
+    /* font-family: "lato"; */
+    line-height: 29px;
+    text-align: center;
+  }
+  .landing-how-to h3 {
+    /* background-color: pink;
+     */
+    font-size: 15px;
+  }
+  .landing-how-to p {
+    font-size: 13px;
+  }
+  .landing-how-to {
+    /* background-color: grey; */
+  }
+  .landing-step {
+    width: 18%;
+    padding: 5px;
+    /* background-color: pink; */
+    height: 130px;
   }
 }

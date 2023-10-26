@@ -37,8 +37,19 @@
   padding: 0 9px;
 }
 
+.newcard-actions {
+  width: 30%;
+  padding: 10px 0;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 @media (max-width: 850px) {
   .new-main-card-container {
-    flex: 0 0 50%;
+    flex: 0 0 70%;
+
+    /* background: pink; */
   }
 }
