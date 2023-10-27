@@ -10,22 +10,27 @@ import { EditPost } from "./components/Pages/EditPost";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LandingPage } from "./components/LandingPage/LandingPage";
 import { Navbar } from "./components/Navbar";
+import { Wishlist } from "./components/Wishlist";
+// import { ThemeProvider } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
+      {/* <ThemeProvider> */}
       <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/browse" element={<Homepage />} />
           <Route path="/addjob" element={<JobForm />} />
+          <Route path="/wishlist" element={<Wishlist />} />
           <Route path="posts/details/:id" element={<ShowPost />} />
           <Route path="posts/edit/:id" element={<EditPost />} />
           <Route path="posts/delete/:id" element={<DeletePost />} />
         </Routes>
         <Footer />
       </BrowserRouter>
+      {/* </ThemeProvider> */}
     </div>
   );
 }

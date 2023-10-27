@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import "./NewCard.css";
 import { Divider } from "@mui/material";
 import { Delete, Favorite, LocationOn } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../WishlistContext";
 
 export const NewCard = (props) => {
   const { id, location, contact, myImage, description, fee } = props.data;
+  const { addToCart, cartItems } = useContext(CartContext);
   return (
     <div className="new-main-card-container">
       <div className="new-card">
@@ -39,7 +41,10 @@ export const NewCard = (props) => {
             <Link style={{ textDecoration: "none", color: "black" }}>
               <Delete sx={{ color: "#343434" }} />
             </Link>
-            <Link style={{ textDecoration: "none", color: "black" }}>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              onClick={() => addToCart(id)}
+            >
               <Favorite sx={{ color: "#343434" }} />
             </Link>
           </div>

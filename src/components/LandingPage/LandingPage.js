@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { Divider } from "@mui/material";
 import { Info } from "../Info/Info";
 
+import { Featured } from "../Featured/Featured";
+
 export const LandingPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -89,6 +91,8 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
+      <Divider sx={{ margin: "3% 10%" }} />
+      <Featured />
       <Divider sx={{ margin: "0 10%" }} />
       <Info />
       <Divider sx={{ margin: "0 10%" }} />

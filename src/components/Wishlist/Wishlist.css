@@ -1,0 +1,51 @@
+.cart-container {
+  /* background: pink; */
+  padding: 20px;
+}
+
+.cart-product-ccontainer {
+  /* background-color: grey; */
+  width: 300px;
+  padding: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.289);
+  border-radius: 5px;
+}
+
+.car-image-container {
+  width: 100%;
+}
+.car-image-container img {
+  width: 100%;
+}
+
+.remove-from-list {
+  margin-top: 20px;
+}
+
+.remove-btn {
+  border: none;
+  cursor: pointer;
+  border: 1px solid grey;
+  height: 40px;
+  border-radius: 4px;
+  /* background-color: #0d0511; */
+  color: black;
+  font-size: 16px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remove-btn:hover {
+  background-color: #0d0511;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 720px) {
+  .cart-product-ccontainer {
+    /* background-color: grey; */
+    width: 80%;
+    margin: auto;
+  }
+}
