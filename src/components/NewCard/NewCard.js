@@ -1,14 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import "./NewCard.css";
 import { Divider } from "@mui/material";
 import { Delete, Favorite, LocationOn } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { CartContext } from "../../WishlistContext";
+import axios from "axios";
+import { UserContext } from "../../context/userContext";
 
 export const NewCard = (props) => {
-  const { id, location, contact, myImage, description, fee } = props.data;
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { _id, location, contact, myImage, description, fee, author, myTime } =
+    props.data;
+
+  const { user } = useContext(UserContext);
+
+  const tof = author === user.userName;
+  const handletof = () => {
+    console.log("user.userName : ", user.userName);
+    console.log("author : ", author);
+  };
+
   return (
     <div className="new-main-card-container">
       <div className="new-card">
@@ -23,31 +34,46 @@ export const NewCard = (props) => {
           <img src={myImage} alt="job post" />
         </div>
         <div className="new-card-bottom">
-          <p>{description}</p>
+          <div className="description-section">
+            <p>{description}</p>
+          </div>
           <Divider
             sx={{
               margin: "0 20px",
             }}
           />
-          <p
-            style={{
-              textAlign: "right",
-              fontWeight: "bold",
-            }}
-          >
-            ${fee}/hr
-          </p>
-          <div className="newcard-actions">
-            <Link style={{ textDecoration: "none", color: "black" }}>
-              <Delete sx={{ color: "#343434" }} />
-            </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              onClick={() => addToCart(id)}
+          <div className="card-fee-delete">
+            <p
+              style={{
+                textAlign: "right",
+                fontWeight: "bold",
+              }}
             >
-              <Favorite sx={{ color: "#343434" }} />
-            </Link>
+              ${fee}/hr
+            </p>
+            {user.userName == author && (
+              <Link
+                // onClick={handleDeleteBook}
+                style={{ textDecoration: "none", color: "black" }}
+                to={`/posts/delete/${_id}`}
+                onClick={handletof}
+              >
+                <Delete sx={{ color: "#343434" }} />
+              </Link>
+            )}
           </div>
+          {user ? (
+            <div className="author-time">
+              <p style={{ color: "#949494" }}>
+                <i>~ Postby @{author}</i>
+              </p>
+              {/* <p className="card-time">21 Nov 2023 at 12:20pm</p> */}
+              {/* <p className="card-time">{new Date().toLocaleString() + ""}</p> */}
+              <p>{myTime}</p>
+            </div>
+          ) : (
+            <p>Error browwwskie</p>
+          )}
         </div>
       </div>
     </div>

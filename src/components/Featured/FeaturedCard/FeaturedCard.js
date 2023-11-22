@@ -28,14 +28,14 @@ export const FeaturedCard = (props) => {
       </div>
       <Divider sx={{ margin: "0 30px" }} />
       <div className="featured-card-middle">
-        <h3>Skill</h3>
+        <h3>Skills</h3>
         <p>-{skill1}</p>
         <p>-{skill2}</p>
         <p>-{skill3}</p>
       </div>
       <Divider sx={{ margin: "0 30px" }} />
       <div className="featured-card-bottom">
-        <h2>I'm the right person for the Job:</h2>
+        <h2>Why me:</h2>
         <p>{description}</p>
       </div>
     </div>

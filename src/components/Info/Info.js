@@ -13,7 +13,7 @@ export const Info = () => {
         </div>
       </div>
       <div className="info-left">
-        <h2>Everything made easier</h2>
+        <h2>Everything made easier!</h2>
         <p>
           You don't have to do Everything alone. At very low costs, get reliable
           help for anything.

@@ -4,25 +4,26 @@ import { Card } from "../Card";
 import { DATA } from "../../Data";
 import axios from "axios";
 import { NewCard } from "../NewCard/NewCard";
+import { Spinner } from "../Spinner/Spinner";
 
 export const Cards = () => {
-  // const [posts, setPosts] = useState([]);
-  // const [loading, setLoading] = useState(false);
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   axios
-  //     .get("http://localhost:5555/posts")
-  //     .then((res) => {
-  //       setPosts(res.data.data);
-  //       setLoading(false);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //       console.log("error occured bro");
-  //       setLoading(false);
-  //     });
-  // }, []);
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("/posts")
+      .then((res) => {
+        setPosts(res.data.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        console.log("error occured bro");
+        setLoading(false);
+      });
+  }, []);
   return (
     <div
       style={{
@@ -31,7 +32,7 @@ export const Cards = () => {
         // height: "80vh",
       }}
     >
-      <h1 style={{ marginLeft: "20px" }}>Available Tasks</h1>
+      <h1 style={{ marginLeft: "20px" }}>Available Jobs</h1>
       <div
         style={{
           // background: "green",
@@ -41,10 +42,14 @@ export const Cards = () => {
           paddingLeft: 0,
         }}
       >
-        {DATA.map((post, index) => (
-          // <Card data={post} />
-          <NewCard data={post} />
-        ))}
+        {loading ? (
+          <>
+            {/* <p>loading...</p> */}
+            <Spinner myLoading="loading available jobs" />
+          </>
+        ) : (
+          posts.map((post, index) => <NewCard data={post} />)
+        )}
       </div>
     </div>
   );

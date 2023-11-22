@@ -3,9 +3,15 @@
   width: 100%;
 }
 
-.form-container {
+.username {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-form-container {
   width: 500px;
-  /* background-color: pink; */
+  /* background-color: rgb(250, 2, 2); */
   margin: auto;
   padding: 10px;
   margin-bottom: 40px;
@@ -15,6 +21,10 @@
   border: 1px solid rgba(183, 183, 183, 0.693);
   border-radius: 3px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  /* background: red; */
+}
+.form-container form {
+  /* background-color: red; */
 }
 
 .form-container h1 {
@@ -66,6 +76,14 @@
   flex-direction: column;
 }
 
+.submit-btn-container {
+  /* background-color: grey; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .submit-btn {
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.581);
@@ -76,7 +94,7 @@
   cursor: pointer;
   font-family: "Oswald", sans-serif;
   transition: 0.4s;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 }
 
 .submit-btn:hover {
@@ -109,8 +127,9 @@
 }
 
 @media (max-width: 720px) {
-  .form-container {
+  .form-form-container {
     width: 80%;
+    /* background-color: pink; */
   }
   .form-pager {
     margin-bottom: 90px;
@@ -118,12 +137,6 @@
   .city,
   .town {
     width: 43%;
-  }
-  .submit-btn {
-    margin: auto;
-    position: relative;
-    top: 0;
-    left: 140px;
   }
   .home-link-container {
     margin-left: 30px;

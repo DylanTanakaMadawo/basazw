@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 
 import "./LandingPage.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Divider } from "@mui/material";
 import { Info } from "../Info/Info";
 
 import { Featured } from "../Featured/Featured";
+import { Footer } from "../Footer/Footer";
 
 export const LandingPage = () => {
+  // const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -23,12 +25,12 @@ export const LandingPage = () => {
             looks to improve the relationship between the those who need instant
             help and those who can offer instant services to provide the help.
           </p>
-          <p>
+          {/* <p>
             BASA.ZW is a job service that operates in Zimbabwe and connects
             users, called Helpers, to paying gigs. Helpers set their own rates
             and may get tips. Popular jobs with higher earning potential include
             handyman-type tasks, moving and cleaning, according to the company
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -96,6 +98,7 @@ export const LandingPage = () => {
       <Divider sx={{ margin: "0 10%" }} />
       <Info />
       <Divider sx={{ margin: "0 10%" }} />
+      <Footer />
       {/* <div className="landing-testimonies-container">
         <div className="landing-testimonies"></div>
       </div> */}

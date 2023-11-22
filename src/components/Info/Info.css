@@ -59,3 +59,12 @@
     width: 85%;
   }
 }
+
+@media (max-width: 1050px) {
+  .info-left p {
+    margin-left: 20px;
+  }
+  .info-container {
+    margin-top: 80px;
+  }
+}

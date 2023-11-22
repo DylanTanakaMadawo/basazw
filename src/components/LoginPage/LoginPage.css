@@ -1,0 +1,91 @@
+.login-container {
+  /* background-color: pink; */
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  /* margin-top: 60px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container {
+  /* background-color: grey; */
+  width: 60%;
+  height: 70%;
+  margin: auto;
+  background-color: white;
+}
+.form-container form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: green; */
+  height: 290px;
+}
+.form-container form input {
+  font-family: inherit;
+  width: 50%;
+  height: 30px;
+  border: none;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.signup-container .sign-up {
+  color: rgb(1, 1, 197);
+}
+
+.login-btn-btn {
+  border: none;
+  font-family: inherit;
+  border: 1px solid grey;
+  background-color: #0d0511;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 5px;
+}
+.login-btn-btn:hover {
+  background-color: rgba(207, 207, 207, 0.568);
+  color: #0d0511;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 390px) {
+  .login-container {
+    /* background-color: pink; */
+    width: 90%;
+    height: 65vh;
+  }
+  .form-container {
+    width: 70%;
+    height: 90%;
+  }
+}
+@media (max-width: 850px) {
+  .login-container {
+    /* background-color: pink; */
+    width: 90%;
+    height: 55vh;
+  }
+  .form-container {
+    width: 70%;
+    /* height: 90%; */
+  }
+}
+
+@media (max-width: 1050px) {
+  .login-container {
+    /* background-color: pink; */
+    width: 90%;
+    height: 55vh;
+  }
+  .form-container {
+    width: 70%;
+    /* height: 90%; */
+  }
+}

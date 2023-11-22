@@ -6,7 +6,7 @@ import { TASKERDATA } from "../../Data";
 export const Featured = () => {
   return (
     <div className="featured-container">
-      <h1>Top Taskers</h1>
+      <h1>Top Helpers</h1>
       <div className="featured-cards">
         {/* <FeaturedCard /> */}
         {TASKERDATA.map((data) => (

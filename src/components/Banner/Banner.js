@@ -6,11 +6,15 @@ export const Banner = () => {
   return (
     <div className="banner-container">
       <div className="banner-form-container">
-        <h1>Need Something Done?</h1>
-        <p>We got you</p>
+        <h1 className="banner-center">Need Tasks Around you?We got you</h1>
+        <p className="banner-center">Filter Jobs based on location</p>
         <form>
-          <input />
-          <button>Request help</button>
+          <input
+            placeholder="Enter location"
+            type="text"
+            style={{ fontFamily: "inherit" }}
+          />
+          <button>Filter</button>
         </form>
       </div>
     </div>

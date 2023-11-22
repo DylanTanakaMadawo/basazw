@@ -39,9 +39,9 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="signature">
+      {/* <div className="signature">
         <p>All rights reserved | Dylan Madawo | 2023</p>
-      </div>
+      </div> */}
     </>
   );
 };

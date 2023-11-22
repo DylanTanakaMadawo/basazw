@@ -28,6 +28,10 @@
   border-radius: 5px;
 }
 
+.banner-center {
+  text-align: center;
+}
+
 .banner-form-container form {
   /* height: 70px; */
   display: flex;
@@ -61,6 +65,7 @@
   .banner-form-container {
     width: 90%;
     height: 90%;
+    padding: 10px;
   }
   .banner-form-container input {
     height: 20px;
@@ -71,5 +76,15 @@
     /* padding: 12px; */
     height: 40px;
     width: 80px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .banner-container {
+    height: 60vh;
+  }
+  .banner-form-container {
+    width: 85%;
+    /* background-color: pink; */
   }
 }

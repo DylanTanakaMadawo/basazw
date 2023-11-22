@@ -1,10 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import { CartItem } from "./CartItem";
 
 import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../../WishlistContext";
+
 import { DATA } from "../../Data";
+//change based on the source of data
+
+import axios from "axios";
 
 export const Wishlist = () => {
   const { cartItems, getTotalCartAmount } = useContext(CartContext);
@@ -12,6 +16,24 @@ export const Wishlist = () => {
   const totalAmount = getTotalCartAmount();
 
   const navigate = useNavigate();
+
+  //data from mongodb
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    // setLoading(true);
+    axios
+      .get("http://localhost:5555/posts")
+      .then((res) => {
+        setPosts(res.data.data);
+        // setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        console.log("error occured bro");
+        // setLoading(false);
+      });
+  }, []);
 
   return (
     <div
@@ -21,7 +43,7 @@ export const Wishlist = () => {
       }}
     >
       <div>
-        {DATA.map((product) => {
+        {posts.map((product) => {
           if (cartItems[product.id] !== 0) {
             return (
               <>

@@ -33,6 +33,17 @@
 .featured-card-bottom {
   padding: 10px 20px;
 }
+
+@media (max-width: 1050px) {
+  .featured-card-container {
+    /* width: 70%;
+    height: 73vh;
+    margin-bottom: 100px; */
+    /* background-color: pink; */
+    height: 40vh;
+  }
+}
+
 @media (max-width: 850px) {
   .featured-card-container {
     width: 70%;
