@@ -20,7 +20,8 @@ import { UserContextProvider } from "./context/userContext";
 import axios from "axios";
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "http://localhost:5555";
+// axios.defaults.baseURL = "http://localhost:5555";
+axios.defaults.baseURL = "https://basazw-api.onrender.com/";
 
 function App() {
   return (
