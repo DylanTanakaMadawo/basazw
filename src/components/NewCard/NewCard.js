@@ -13,7 +13,6 @@ export const NewCard = (props) => {
     props.data;
 
   const { user } = useContext(UserContext);
-  const myUserName = author;
 
   return (
     <div className="new-main-card-container">
@@ -46,7 +45,7 @@ export const NewCard = (props) => {
             >
               ${fee}/hr
             </p>
-            {myUserName == author && (
+            {user.userName == author && (
               <Link
                 // onClick={handleDeleteBook}
                 style={{ textDecoration: "none", color: "black" }}

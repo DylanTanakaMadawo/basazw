@@ -27,28 +27,28 @@ axios.defaults.baseURL = "https://basazw-api.onrender.com/";
 function App() {
   return (
     <div className="App">
-      <UserContextProvider>
-        <BrowserRouter>
-          {/* <Navbar /> */}
-          <Toaster position="top-right" toastOptions={{ duration: 3500 }} />
-          <Routes>
-            <Route path="/" element={<LoginPage />} />
-            <Route path="/home" element={<LandingPage />} />
-            <Route path="/browse" element={<Homepage />} />
-            <Route path="/addjob" element={<JobForm />} />
-            <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="posts/details/:id" element={<ShowPost />} />
-            <Route path="posts/edit/:id" element={<EditPost />} />
-            <Route path="posts/delete/:id" element={<DeletePost />} />
-          </Routes>
-          {/* <Footer /> */}
-          <div className="signature">
-            <p>All rights reserved | Dylan Madawo | 2023</p>
-          </div>
-        </BrowserRouter>
-      </UserContextProvider>
+      {/* <UserContextProvider> */}
+      <BrowserRouter>
+        {/* <Navbar /> */}
+        <Toaster position="top-right" toastOptions={{ duration: 3500 }} />
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/home" element={<LandingPage />} />
+          <Route path="/browse" element={<Homepage />} />
+          <Route path="/addjob" element={<JobForm />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="posts/details/:id" element={<ShowPost />} />
+          <Route path="posts/edit/:id" element={<EditPost />} />
+          <Route path="posts/delete/:id" element={<DeletePost />} />
+        </Routes>
+        {/* <Footer /> */}
+        <div className="signature">
+          <p>All rights reserved | Dylan Madawo | 2023</p>
+        </div>
+      </BrowserRouter>
+      {/* </UserContextProvider> */}
     </div>
   );
 }
