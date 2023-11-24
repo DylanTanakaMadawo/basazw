@@ -50,7 +50,6 @@ export const NewCard = (props) => {
                 // onClick={handleDeleteBook}
                 style={{ textDecoration: "none", color: "black" }}
                 to={`/posts/delete/${_id}`}
-                onClick={handletof}
               >
                 <Delete sx={{ color: "#343434" }} />
               </Link>
