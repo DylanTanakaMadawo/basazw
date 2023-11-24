@@ -14,12 +14,6 @@ export const NewCard = (props) => {
 
   const { user } = useContext(UserContext);
 
-  const tof = author === user.userName;
-  const handletof = () => {
-    console.log("user.userName : ", user.userName);
-    console.log("author : ", author);
-  };
-
   return (
     <div className="new-main-card-container">
       <div className="new-card">
