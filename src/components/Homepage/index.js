@@ -25,7 +25,7 @@ export const Homepage = () => {
     <div>
       <Navbar />
 
-      {!!user && <h1>Welcome {user.userName}!</h1>}
+      {/* {!!user && <h1>Welcome {user.userName}!</h1>} */}
       <Banner />
       <Divider sx={{ margin: "0 10%" }} />
       <Cards />
