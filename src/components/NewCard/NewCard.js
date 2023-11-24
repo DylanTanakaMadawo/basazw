@@ -13,7 +13,7 @@ export const NewCard = (props) => {
     props.data;
 
   const { user } = useContext(UserContext);
-  const myUserName = user.userName;
+  const myUserName = author;
 
   return (
     <div className="new-main-card-container">
