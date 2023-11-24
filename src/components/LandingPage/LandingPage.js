@@ -13,6 +13,12 @@ export const LandingPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const navigate = useNavigate();
+  const myNavigate = () => {
+    navigate("/browse");
+    window.location.reload();
+  };
   return (
     <div className="landing-page-container">
       <div className="landing-desc-container">
@@ -45,9 +51,14 @@ export const LandingPage = () => {
             <div className="landing-card-text">
               <h2>Need Work?</h2>
               <p>Choose When and Where you want to Work</p>
-              <Link className="for-to-link" to="/browse">
-                <p>LOOKING TO WORK?</p>
-              </Link>
+              <button
+                style={{ cursor: "pointer", fontFamily: "inherit" }}
+                className="for-to-link"
+                onClick={myNavigate}
+              >
+                {/* <p>LOOKING TO WORK?</p> */}
+                LOOKING TO WORK?
+              </button>
             </div>
           </div>
 

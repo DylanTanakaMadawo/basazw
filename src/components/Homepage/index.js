@@ -13,19 +13,19 @@ import { useNavigate } from "react-router-dom";
 // import { useNavigate}
 
 export const Homepage = () => {
-  const [myUserName, setMyUserName] = useState(null);
+  // const [myUserName, setMyUserName] = useState(null);
   const { user } = useContext(UserContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setMyUserName(user.userName);
+    // setMyUserName(user.userName);
   }, []);
 
   return (
     <div>
       <Navbar />
 
-      {!!user && <h1>Welcome {myUserName}!</h1>}
+      {!!user && <h1>Welcome {user.userName}!</h1>}
       <Banner />
       <Divider sx={{ margin: "0 10%" }} />
       <Cards />
