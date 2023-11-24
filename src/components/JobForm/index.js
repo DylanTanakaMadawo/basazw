@@ -21,8 +21,10 @@ export const JobForm = () => {
   const [postImage, setPostImage] = useState({ myFile: "" });
   const [author, setAuthor] = useState("");
   const [myTime, setTime] = useState("");
+  // const [myuserName, setUsername] = useState("");
 
   const { user } = useContext(UserContext);
+  const myuserName = user.userName;
 
   // const myAuthor = user.userName;
 
@@ -47,7 +49,7 @@ export const JobForm = () => {
       fee,
       // myImage: postImage.myFile,
       myImage: postImage.myFile,
-      author: user.userName,
+      author: myuserName,
       // myTime: new Date().toLocaleString() + "",
       myTime: new Intl.DateTimeFormat("en-GB", {
         year: "numeric",
