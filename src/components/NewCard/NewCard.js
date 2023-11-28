@@ -45,7 +45,7 @@ export const NewCard = (props) => {
             >
               ${fee}/hr
             </p>
-            {user.userName === author && (
+            {user.userName === author ? (
               <Link
                 // onClick={handleDeleteBook}
                 style={{ textDecoration: "none", color: "black" }}
@@ -53,6 +53,9 @@ export const NewCard = (props) => {
               >
                 <Delete sx={{ color: "#343434" }} />
               </Link>
+            ) : (
+              // <h1>username problem yoo</h1>
+              <></>
             )}
           </div>
           {user ? (
