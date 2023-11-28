@@ -11,7 +11,7 @@ export function UserContextProvider({ children }) {
         setUser(data);
       });
     }
-  }, []);
+  }, [user]);
 
   // const myValues = [user, setUser];
 
