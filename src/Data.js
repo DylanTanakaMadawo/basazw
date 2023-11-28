@@ -53,7 +53,7 @@ export const TASKERDATA = [
   {
     id: 1,
     image: "./images/john.webp",
-    name: "Jane Doe",
+    name: "Memory Card",
     review: 100,
     completed: 30,
     skill1: "Help Moving",
@@ -64,7 +64,7 @@ export const TASKERDATA = [
   {
     id: 2,
     image: "./images/bob.webp",
-    name: "Bob Builder",
+    name: "Usher Reymond",
     review: 98,
     completed: 17,
     skill1: "Brick Laying",
@@ -76,7 +76,7 @@ export const TASKERDATA = [
   {
     id: 3,
     image: "./images/john.webp",
-    name: "Trish Match",
+    name: "Morriah Capri",
     review: 97,
     completed: 22,
     skill1: "Driving",

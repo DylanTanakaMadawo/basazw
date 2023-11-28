@@ -21,10 +21,7 @@ export const Navbar = () => {
             <Link style={{ textDecoration: "none", color: "black" }} to="/home">
               <Home sx={{ color: "#343434", fontSize: "30px" }} />
             </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/wishlist"
-            >
+            <Link style={{ textDecoration: "none", color: "black" }} to="/">
               <Favorite sx={{ color: "#343434", fontSize: "30px" }} />
             </Link>
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
