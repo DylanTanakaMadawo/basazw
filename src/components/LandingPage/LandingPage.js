@@ -17,7 +17,7 @@ export const LandingPage = () => {
   const navigate = useNavigate();
   const myNavigate = () => {
     navigate("/browse");
-    // window.location.reload();
+    window.location.reload();
   };
   return (
     <div className="landing-page-container">
