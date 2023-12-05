@@ -16,6 +16,8 @@
   height: 70%;
   margin: auto;
   background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  padding: 10px;
 }
 .form-container form {
   display: flex;

@@ -1,0 +1,35 @@
+.login-land-container {
+  /* background-color: pink; */
+  padding: 10px;
+  /* border: 1px solid rgba(128, 128, 128, 0.305); */
+}
+
+.login-land-top {
+  text-align: center;
+}
+
+.login-land-list {
+  margin-top: 40px;
+}
+
+.login-land-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: grey; */
+}
+
+.login-land-image {
+  /* background-color: pink; */
+  /* height: 200px; */
+  width: 45%;
+  border-radius: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.392);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-land-image img {
+  width: 100%;
+  border-radius: 30px;
+}

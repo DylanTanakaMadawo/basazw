@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { LoginLand } from "../LoginLand/LoginLand";
 
 export const LoginPage = () => {
   useEffect(() => {
@@ -41,29 +42,33 @@ export const LoginPage = () => {
       console.log(error);
     }
   };
+
   return (
-    <div className="login-container">
-      <div className="form-container">
-        <form onSubmit={loginUser}>
-          <h2>Fill form below to LOG IN.</h2>
-          <input
-            type="text"
-            placeholder="UserName"
-            value={data.userName}
-            onChange={(e) => setData({ ...data, userName: e.target.value })}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={data.password}
-            onChange={(e) => setData({ ...data, password: e.target.value })}
-          />
-          <button className="login-btn-btn">Login</button>
-        </form>
-        <div className="signup-container">
-          <Link className="sign-up" to="/signup">
-            <p>Don't have an account? Sign up.</p>
-          </Link>
+    <div className="whole=login">
+      <LoginLand />
+      <div className="login-container">
+        <div className="form-container">
+          <form onSubmit={loginUser}>
+            <h2>Fill form below to LOG IN.</h2>
+            <input
+              type="text"
+              placeholder="UserName"
+              value={data.userName}
+              onChange={(e) => setData({ ...data, userName: e.target.value })}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={data.password}
+              onChange={(e) => setData({ ...data, password: e.target.value })}
+            />
+            <button className="login-btn-btn">Login</button>
+          </form>
+          <div className="signup-container">
+            <Link className="sign-up" to="/signup">
+              <p>Don't have an account? Sign up.</p>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
