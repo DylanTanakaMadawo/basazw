@@ -45,7 +45,7 @@ export const LoginPage = () => {
 
   return (
     <div className="whole=login">
-      <LoginLand />
+      {/* <LoginLand /> */}
       <div className="login-container">
         <div className="form-container">
           <form onSubmit={loginUser}>
