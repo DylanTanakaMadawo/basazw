@@ -24,14 +24,6 @@ export const LandingPage = () => {
     <div className="landing-page-container">
       <div className="landing-desc-container">
         <div className="landing-desc">
-          {/* <p>
-            BASA.ZW operates an online marketplace that matches freelance labor
-            with local demand, allowing people to find help with tasks including
-            personal assistance, furniture assembly, moving, delivery, and
-            handyman work. Founded in 2023 by founder an CEO Dylan Madawo, It
-            looks to improve the relationship between the those who need instant
-            help and those who can offer instant services to provide the help.
-          </p> */}
           <LoginLand />
         </div>
       </div>
