@@ -56,6 +56,17 @@
   color: #0d0511;
   transition: 0.3s ease-in-out;
 }
+.login-logo-container {
+  font-family: "Vina Sans", cursive;
+  text-align: center;
+}
+
+.site-description {
+  padding: 10px;
+  text-align: center;
+  background-color: #0d0511;
+  color: white;
+}
 
 @media (max-width: 390px) {
   .login-container {

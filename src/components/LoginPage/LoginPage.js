@@ -46,6 +46,16 @@ export const LoginPage = () => {
   return (
     <div className="whole=login">
       {/* <LoginLand /> */}
+      <div className="login-logo-container">
+        <h1>BASA.zw</h1>
+      </div>
+      <div className="site-description">
+        <p>
+          Explore the best place that matches freelance labor and local demand
+          with services that include,{" "}
+          <i>housemaids, moving, cleaning, deliveries</i> and so much more!
+        </p>
+      </div>
       <div className="login-container">
         <div className="form-container">
           <form onSubmit={loginUser}>

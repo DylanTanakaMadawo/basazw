@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../LoginPage/LoginPage.css";
+import "./SIgnUp.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
@@ -42,12 +43,18 @@ export const SignUp = () => {
         <form onSubmit={registerUser}>
           <h2>Fill form below to CREATE AN ACCOUNT.</h2>
           <input
+            style={{
+              marginBottom: "20px",
+            }}
             type="text"
             placeholder="UserName"
             value={data.userName}
             onChange={(e) => setData({ ...data, userName: e.target.value })}
           />
           <input
+            style={{
+              marginBottom: "30px",
+            }}
             type="password"
             placeholder="Password"
             value={data.password}

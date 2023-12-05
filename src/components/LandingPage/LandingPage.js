@@ -7,6 +7,7 @@ import { Info } from "../Info/Info";
 
 import { Featured } from "../Featured/Featured";
 import { Footer } from "../Footer/Footer";
+import { LoginLand } from "../LoginLand/LoginLand";
 
 export const LandingPage = () => {
   // const navigate = useNavigate();
@@ -23,20 +24,15 @@ export const LandingPage = () => {
     <div className="landing-page-container">
       <div className="landing-desc-container">
         <div className="landing-desc">
-          <p>
+          {/* <p>
             BASA.ZW operates an online marketplace that matches freelance labor
             with local demand, allowing people to find help with tasks including
             personal assistance, furniture assembly, moving, delivery, and
             handyman work. Founded in 2023 by founder an CEO Dylan Madawo, It
             looks to improve the relationship between the those who need instant
             help and those who can offer instant services to provide the help.
-          </p>
-          {/* <p>
-            BASA.ZW is a job service that operates in Zimbabwe and connects
-            users, called Helpers, to paying gigs. Helpers set their own rates
-            and may get tips. Popular jobs with higher earning potential include
-            handyman-type tasks, moving and cleaning, according to the company
           </p> */}
+          <LoginLand />
         </div>
       </div>
 
@@ -51,6 +47,7 @@ export const LandingPage = () => {
             <div className="landing-card-text">
               <h2>Need Work?</h2>
               <p>Choose When and Where you want to Work</p>
+              <h3>Click button below to learn more</h3>
               <button
                 style={{ cursor: "pointer", fontFamily: "inherit" }}
                 className="for-to-link"
@@ -69,9 +66,18 @@ export const LandingPage = () => {
             <div className="landing-card-text">
               <h2>Need Help?</h2>
               <p>Hire Reliable Hourly Staff With Full Predictability</p>
-              <Link className="for-to-link" to="/addjob">
+              <h3>Click button below to learn more</h3>
+              {/* <Link className="for-to-link" to="/addjob">
                 <p>LOOKING TO HIRE?</p>
-              </Link>
+              </Link> */}
+              <button
+                style={{ cursor: "pointer", fontFamily: "inherit" }}
+                className="for-to-link"
+                onClick={myNavigate}
+              >
+                {/* <p>LOOKING TO WORK?</p> */}
+                LOOKING TO HIRE?
+              </button>
             </div>
           </div>
         </div>

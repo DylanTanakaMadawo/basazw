@@ -25,10 +25,10 @@ export const LoginLand = () => {
             <p>And much more!</p>
           </ul>
         </div>
-
+        {/* 
         <div className="login-land-image">
           <img src="./images/1.jpg" alt="welcome-pic" />
-        </div>
+        </div> */}
       </div>
       {/* <p>
         Just Login or Sign up if you don't have an account already and explore a
